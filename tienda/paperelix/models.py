@@ -10,6 +10,7 @@ class Categoria(models.Model):
 class Producto(models.Model):
     nombre=models.CharField(max_length=200)
     precio=models.DecimalField(max_digits=10, decimal_places=2)
+    img = models.ImageField(upload_to='productos', null=False, blank=False, default='productos/paperelix.png')
     descripcion=models.TextField()
     materiales=models.TextField()
     medidas=models.CharField(max_length=200)
@@ -17,4 +18,4 @@ class Producto(models.Model):
     categoria=models.ForeignKey(Categoria, on_delete=models.CASCADE, related_name='productos')
     
     def __str__ (self):
-        return (f'self.nombre (self.categoria)')
+        return (f'{self.nombre} ({self.categoria})')

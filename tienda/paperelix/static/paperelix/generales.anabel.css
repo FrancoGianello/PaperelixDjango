@@ -1,0 +1,30 @@
+/*Anabel*/
+@import url(generales.css);
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    min-height: 50rem;
+    margin: 0 auto;
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+}
+.section {
+    width: 100%;
+    margin: 0 auto;
+}
+.section__content{
+    margin: 0 auto 2rem;
+}
+
+/* --- cards pasado a generales --- */
+/* --- end cards --- */
+
+/* --- shopping button (inside cards) --- */
+/* --- end shopping --- */
+
+/*-----------UTILIDADES--------------*/
+/* -- end utilidades --*/

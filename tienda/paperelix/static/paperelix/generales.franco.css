@@ -1,0 +1,28 @@
+@import url('generales.css');
+
+/*AQUÍ VUESTRO CÓDIGO*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
+.main{
+    background-color: var(--beige);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: var(--space-ultra-l);
+    gap: var(--space-m);
+}
+.main__titulo{
+    text-align: center;
+}
+div{
+    border-radius: var(--space-s);
+}
+.container{
+    border-radius: 0;
+}

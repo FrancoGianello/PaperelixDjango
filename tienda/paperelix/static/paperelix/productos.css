@@ -1,0 +1,95 @@
+@import url(generales.css);
+/*-----------PRODUCTO--------------*/
+.section {
+    padding: 3rem 0 2rem;
+}
+.section__content--product{
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:var(--space-xxl);
+   
+}
+/*-----------FOTO PRODUCTO --------------*/
+/* --- product-img pasado a generales --- */
+/* --- fin product-img --- */
+.product__img-wrapper{
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--beige);
+}
+/*-----------INFO PRODUCTO--------------*/
+.info {
+    display: flex;
+    flex-direction: column;
+}
+/*-----------INFO DESCRIPCION PRODUCTO--------------*/
+.info__content {
+    margin-bottom: var(--space-xxl);
+}
+.content__title, .content__text {
+    padding-top: var(--space-xl);
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+
+}
+.content__title {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 0;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+.content__price {
+    color: var(--pink);
+    padding: var(--space-xl) 0 0 var(--space-xl);
+    font-size: 2rem;
+    border-left: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+}
+.content__text {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    text-align: justify;
+}
+.btn--extralg {
+    border-width: 2px;
+    width: 100%;
+    border-radius: 0;
+}
+.fold {display: none;}
+/*-----------INFO BOTONES PRODUCTO--------------*/
+.info__btn {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: var(--space-xxl);
+}
+.svg-btn {
+    height: 4rem;
+}
+
+/*----------- PRODUCTOS RELACIONADOS --------------*/
+.section--bg1{
+    background-color: var(--primary-color);
+}
+.section__title{
+    /* margin: 0 auto 2rem; */
+    padding: var(--space-xxl);
+    text-align: center;
+    background-color: var(--baby-blue);
+}
+.section__content--recomendations{
+    background-color: var(--primary-color);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+.img-fit {
+    width: 80%;
+    height: 80%;
+}
