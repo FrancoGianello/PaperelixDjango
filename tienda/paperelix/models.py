@@ -23,4 +23,4 @@ class Producto(models.Model):
         return (f'{self.nombre} ({self.categoria})')    
     
     def relacionados(cate):
-        return Producto.objects.filter(categoria=cate)
+        return Producto.objects.filter(categoria=cate)[:3]
