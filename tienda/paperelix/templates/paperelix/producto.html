@@ -1,0 +1,69 @@
+{% extends 'tienda/base.html' %} 
+
+{% block estilos %} 
+{% load static %}
+    <link rel="stylesheet" href="{% static 'paperelix/productos.css' %}">
+    <link rel="stylesheet" href="{% static 'paperelix/articles.anabel.css' %}">
+    <link rel="stylesheet" href="{% static 'paperelix/generales.anabel.css' %}">
+{% endblock %}
+
+
+{% block titulo %}Producto{% endblock %}
+
+{% block contenido %}
+<main class="main">
+    <section id="product" class="section limit-width section--bg1">
+        <div class="section__content section__content--product">
+
+            <!-- PRODUCTO FOTO -->
+            <div class="product__img-wrapper">
+                <img src="{{producto.img.url}}" alt="{{producto.nombre}}">
+            </div>
+
+            <!-- PRODUCTO INFO -->
+            <div class="info">
+                <!-- INFO TEXTO -->
+                <div class="info__content">
+                    <h1 class="content__title">{{producto.nombre}}</h1>
+                    <h4 class="content__price">{{producto.precio}}</h4>
+                    <p class="content__text"></p>
+                    <div id="desplegableExt" class="content__text folded"></div>
+                    <button class="btn btn--extralg btn--outline-black fold" onclick="verMenos()">VER MENOS</a>
+                    <button class="btn btn--extralg btn--outline-black unfold" onclick="verMas()">VER MÁS</a>
+                </div>
+
+                <!-- INFO BOTONES -->
+                <div class="info__btn">
+                    <a href="#" class="btn btn--md btn--primary" id="addCart">AÑADIR A LA CESTA</a>
+                    <a href="#"><i class="fa-solid fa-heart pinky svg-btn"></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="section limit-width section--bg1">
+            <h2 class="section__title limit-width">Productos relacionados</h2>
+            <div class="section__content section__content--recomendations limit-width margin-bottom-0">
+            {% for value in relacionados %}
+                    <div class="card shadow-a">
+                        <a href="{% url 'paperelix:detalle' value.id %}">
+                                <div class="card__header color_`+ this.color + `">
+                                    <img class="img-fit product-img" src="{{value.img.url}}" alt="{{value.nombre}}">
+                                </div>
+                                <div class="card__body">
+                                    <h3 class="card-title">{{value.nombre}}</h3>
+                                    <p>{{value.categoria}}</p>
+                                    <p><strong>{{value.precio}}</strong></p>
+                                </div>
+                        </a>
+                        <div class="shopping">
+                        <p id=""></p>
+                            <div class="cart addCart" onclick="addCart('`+this.clave+`')">
+                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+            {% endfor %}
+            </div>
+        </section>
+    </section>
+</main>
+{% endblock %}

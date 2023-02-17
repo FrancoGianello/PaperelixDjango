@@ -49,18 +49,18 @@
     <header class="header">
         <input type="checkbox" id="nav-toggle" class="nav-toggle order1-mbl">
         <div class="h-content__item h-content__item--left logo-mbl order0-mbl">
-            <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo"></a>
+            <a href="{% url 'paperelix:index' %}"><img class="logo-png" src="{% static 'logos-icons/PNG-rosa.png' %}" alt="logo"></a>
         </div>
 
         <div class="header__content header__content--pc">
             <div class="h-content__item h-content__item--left logo-pc">
-                <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo"></a>
+                <a href="{% url 'paperelix:index' %}"><img class="logo-png" src="{% static 'logos-icons/PNG-rosa.png' %}" alt="logo"></a>
             </div>
 
             <ul class="menu menu--mbl order1-mbl" role="navigation" aria-label="main">
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=pendientes">Pendientes</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=broches">Broches</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=colgantes">Colgantes</a></li>              
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="{% url 'paperelix:categoria' 'Prueba' %}">Pendientes</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="{% url 'paperelix:categoria' 'broches' %}">Broches</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="{% url 'paperelix:categoria' 'colgantes' %}">Colgantes</a></li>              
             </ul>
 
             <ul class="menu h-content__item h-content__item--right order0-mbl" role="navigation" aria-label="cuenta y sobre nosotros">
@@ -97,7 +97,7 @@
         <div class="footer__content limit-width">
             <!-- <h1>DevBoutique</h1> -->
             <div class="footer-logo-wrapper">
-                <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-azul.png" alt="logo"></a>
+                <a href="{% url 'paperelix:index' %}"><img class="logo-png" src="{% static 'logos-icons/PNG-azul.png' %}" alt="logo"></a>
             </div>
             
             <ul class="menu menu--footer" role="navigation" aria-label="sobre nosotros">

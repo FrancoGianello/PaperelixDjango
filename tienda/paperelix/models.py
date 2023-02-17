@@ -1,11 +1,13 @@
 from django.db import models
-
+import random
 # Create your models here.
 class Categoria(models.Model):
     nombre=models.CharField(max_length=200)
     
     def __str__ (self):
         return self.nombre
+    def getAll():
+        return Categoria.objects.all()
 
 class Producto(models.Model):
     nombre=models.CharField(max_length=200)
@@ -18,4 +20,7 @@ class Producto(models.Model):
     categoria=models.ForeignKey(Categoria, on_delete=models.CASCADE, related_name='productos')
     
     def __str__ (self):
-        return (f'{self.nombre} ({self.categoria})')
+        return (f'{self.nombre} ({self.categoria})')    
+    
+    def relacionados(cate):
+        return Producto.objects.filter(categoria=cate)

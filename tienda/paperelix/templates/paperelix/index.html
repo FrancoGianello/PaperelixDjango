@@ -115,7 +115,7 @@
         <div class="w-100 bg-primary">
             <section id="categories" class="section limit-width">
                 <h2 class="section__title">Nuestras categorías</h2>
-                <div class="section__content section__content--category">
+                <!-- <div class="section__content section__content--category">
                     <a href="articles.html?categoria=pendientes" class="category">
                         <div class="category__img-wrapper category__img-wrapper--pink">
                             <img class="category-img" src="img/productos/producto-java.png" alt="t-shirt">
@@ -134,6 +134,16 @@
                         </div>
                         <h2 class="category__title">Colgantes</h2>
                     </a>
+                </div> -->
+                <div class="section__content section__content--category">
+                    {% for value in categorias %}
+                        <a href="{% url 'paperelix:categoria' value.nombre %}" class="category">
+                            <div class="category__img-wrapper category__img-wrapper--pink">
+                                <img class="category-img" src="img/productos/producto-java.png" alt="t-shirt">
+                            </div>
+                            <h2 class="category__title">{{ value.nombre }}</h2>
+                        </a>
+                    {% endfor %}
                 </div>
             </section>
         </div>
@@ -143,7 +153,7 @@
         <section class="section">
             <h2 class="section__title limit-width">Lo más vendido</h2>
             <div id="most-sold" class="section__content section__content--recomendations limit-width">
-                <div class="card-xl shadow-a sr-left-4">
+                <!-- <div class="card-xl shadow-a sr-left-4">
                     <div class="card-xl__header">
                         <img class="img-fit" src="img/productos/producto-pizzas.png" alt="t-shirt">
                     </div>
@@ -181,7 +191,22 @@
                         <a href="#" class="btn btn--primary btn--md">VER PRODUCTO</a>
                         <a href="#" class="btn btn--md btn--outline">AÑADIR</a>
                     </div>
-                </div>
+                </div> -->
+                {% for value in productos %}
+                    <div class="card-xl shadow-a sr-left-4">
+                        <div class="card-xl__header">
+                            <img class="img-fit" src="{{value.img.url}}" alt="t-shirt">
+                        </div>
+                        <div class="card-xl__body">
+                            <h3 class="card-xl-title">{{value.nombre}}</h3>
+                            <p>{{value.descripcion}}</p>
+                        </div>
+                        <div class="card-xl__footer">
+                            <a href="{% url 'paperelix:detalle' value.id %}" class="btn btn--primary btn--md">VER PRODUCTO</a>
+                            <a href="#" class="btn btn--md btn--outline">AÑADIR</a>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </section>
 

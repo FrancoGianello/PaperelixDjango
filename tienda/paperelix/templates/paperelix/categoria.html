@@ -1,0 +1,53 @@
+{% extends 'tienda/base.html' %} 
+
+
+{% block estilos %} 
+{% load static %}
+    <link rel="stylesheet" href="{% static 'paperelix/articles.css' %}">
+{% endblock %}
+
+{% block titulo %}Categoria{% endblock %}
+
+{% block contenido %}
+    <section class="category">
+        <h1 class="category__heading text-align-center"></h1>
+    </section>
+    <div class="container limit-width">
+        <nav class="filters" role="navigation" aria-label="main">
+            <div class="filters__aside">
+                <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
+                <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
+                <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
+            </div>
+            <div class="filters__aside">
+                <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
+                <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
+                <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
+            </div>
+        </nav>
+        <main class="main">
+            {% for value in productos %}
+            <div class="card shadow-a">
+                <a href="{% url 'paperelix:detalle' value.id %}">
+                        <div class="card__header color_`+ this.color + `">
+                            <img class="img-fit product-img" src="{{value.img.url}}" alt="{{value.nombre}}">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card-title">{{value.nombre}}</h3>
+                            <p>{{value.categoria}}</p>
+                            <p><strong>{{value.precio}}</strong></p>
+                        </div>
+                </a>
+                <div class="shopping">
+                <p id=""></p>
+                    <div class="cart addCart" onclick="addCart('`+this.clave+`')">
+                    <i class="fa-solid fa-bag-shopping svg-cart"></i>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </main>
+        <!-- BG FIXED -->
+        <div class="bg-fixed-index"></div>
+    </div>
+{% endblock %}
