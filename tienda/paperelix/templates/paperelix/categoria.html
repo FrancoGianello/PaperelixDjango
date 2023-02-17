@@ -29,12 +29,13 @@
             {% for value in productos %}
             <div class="card shadow-a">
                 <a href="{% url 'paperelix:detalle' value.id %}">
-                        <div class="card__header color_`+ this.color + `">
+                    
+                        <div class="card__header color_{% cycle '0' '1' '2' '3' '4' %}">
                             <img class="img-fit product-img" src="{{value.img.url}}" alt="{{value.nombre}}">
                         </div>
                         <div class="card__body">
                             <h3 class="card-title">{{value.nombre|title}}</h3>
-                            <p>{{value.categoria}}</p>
+                            <p>{{value.categoria|title}}</p>
                             <p><strong>{{value.precio}} €</strong></p>
                         </div>
                 </a>

@@ -27,6 +27,7 @@ def producto (request, pk):
 
 def categoria (request, nombre):
     categoria = Categoria.objects.get(nombre=nombre)
+
     return render(
         request, 'paperelix/categoria.html',
         {
