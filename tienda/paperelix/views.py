@@ -16,7 +16,7 @@ def index(request):
 
 def producto (request, pk):
     producto =  Producto.objects.get(id=pk)
-    relacionados = Producto.relacionados(producto.categoria)
+    relacionados = Producto.relacionados(producto.categoria, producto.nombre)
     return render(
         request, 'paperelix/producto.html',
         {

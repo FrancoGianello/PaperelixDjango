@@ -22,5 +22,5 @@ class Producto(models.Model):
     def __str__ (self):
         return (f'{self.nombre} ({self.categoria})')    
     
-    def relacionados(cate):
-        return Producto.objects.filter(categoria=cate)[:3]
+    def relacionados(cate, nb):
+        return Producto.objects.filter(categoria=cate).exclude(nombre=nb)[:3]
