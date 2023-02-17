@@ -4,7 +4,8 @@
 {% load static %}
     <link rel="stylesheet" href="{% static 'paperelix/productos.css' %}">
     <link rel="stylesheet" href="{% static 'paperelix/articles.anabel.css' %}">
-    <link rel="stylesheet" href="{% static 'paperelix/generales.anabel.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'paperelix/generales.anabel.css' %}"> -->
+    <script src="{% static 'paperelix/producto.js' %}" defer></script>
 {% endblock %}
 
 
@@ -26,8 +27,13 @@
                 <div class="info__content">
                     <h1 class="content__title">{{producto.nombre}}</h1>
                     <h4 class="content__price">{{producto.precio}}</h4>
-                    <p class="content__text"></p>
-                    <div id="desplegableExt" class="content__text folded"></div>
+                    <p class="content__text">{{producto.descripcion}}</p>
+                    <div id="desplegableExt" class="content__text folded">
+                        <strong>Materiales: </strong>{{producto.materiales}}<br><br>
+                        <strong>Medidas: </strong>{{producto.medidas}}<br><br>
+                        <strong>Aviso: </strong>{{producto.aviso}}<br><br>
+                        <strong>categoria: </strong>{{producto.categoria}}<br><br>
+                    </div>
                     <button class="btn btn--extralg btn--outline-black fold" onclick="verMenos()">VER MENOS</a>
                     <button class="btn btn--extralg btn--outline-black unfold" onclick="verMas()">VER MÁS</a>
                 </div>
