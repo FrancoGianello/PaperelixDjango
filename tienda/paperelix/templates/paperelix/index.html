@@ -138,7 +138,7 @@
                 <div class="section__content section__content--category">
                     {% for value in categorias %}
                         <a href="{% url 'paperelix:categoria' value.nombre %}" class="category">
-                            <div class="category__img-wrapper category__img-wrapper--pink">
+                            <div class="category__img-wrapper category__img-wrapper--{%cycle 'pink' 'blue' 'orange'%}">
                                 <img class="category-img" src="img/productos/producto-java.png" alt="t-shirt">
                             </div>
                             <h2 class="category__title">{{ value.nombre }}</h2>
@@ -199,7 +199,7 @@
                         </div>
                         <div class="card-xl__body">
                             <h3 class="card-xl-title">{{value.nombre}}</h3>
-                            <p>{{value.descripcion}}</p>
+                            <p>{{value.descripcion}}</p> 
                         </div>
                         <div class="card-xl__footer">
                             <a href="{% url 'paperelix:detalle' value.id %}" class="btn btn--primary btn--md">VER PRODUCTO</a>

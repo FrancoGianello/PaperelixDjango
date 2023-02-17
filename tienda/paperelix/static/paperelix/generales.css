@@ -350,7 +350,7 @@ h5{font-size: 1.8rem;}
 }
 
 /* xl cards (index)*/
-
+.card-xl{position: relative; background-color: var(--primary-color);}
 .card-xl:hover img{ transform: scale(1.2); }
 .card-xl__header{
     width: 100%;
@@ -361,12 +361,12 @@ h5{font-size: 1.8rem;}
 }
 .card-xl__header>img { transition: transform 250ms ease-out; }
 .card-xl__body, .card-xl__footer{background-color: var(--primary-color);}
-.card-xl__body{padding: 2rem 2rem 1rem}
+.card-xl__body{padding: 2rem 2rem 1rem;}
 .card-xl-title{
     margin-bottom: 1rem;
     font-size: 2.25rem;
 }
-.card-xl__footer{padding: 1rem 2rem 2rem}
+.card-xl__footer{padding: 1rem 2rem 2rem;}
 
 .card-xl, .card{
     border-radius: var(--space-m);
