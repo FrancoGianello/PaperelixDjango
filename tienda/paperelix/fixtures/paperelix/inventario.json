@@ -1,0 +1,303 @@
+[
+    {
+      "model": "paperelix.categoria",
+      "pk": 1,
+      "fields": {
+        "nombre": "pendientes"
+      }
+    },
+    {
+      "model": "paperelix.categoria",
+      "pk": 2,
+      "fields": {
+        "nombre": "broches"
+      }
+    },
+    {
+      "model": "paperelix.categoria",
+      "pk": 3,
+      "fields": {
+        "nombre": "colgantes"
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 1,
+      "fields": {
+        "nombre": "tux",
+        "precio": 10,
+        "img": "/productos/producto-linux.png", 
+        "descripcion": "Para todos los linux enjoyers... da igual si eres más de ubuntu, mint, fedora, etc. A todos nos une el mismo pingüino, hazte con tu Tux y presume de Sistema Operativo.",
+        "materiales": "Colgante realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Cadena no incluida*.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 3
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 2,
+      "fields": {
+        "nombre": "grogu",
+        "precio": 8,
+        "img": "/productos/producto-grogu.png", 
+        "descripcion": "Déjate embriagar por la ternura de Baby Yoda, Grogo con este adorable colgante inspirado en la serie The Mandalorian. Grogu te dará un toque de sensibilidad a la Fuerza allá donde vayas.",
+        "materiales": "Colgante realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Cadena no incluida*.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 3
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 3,
+      "fields": {
+        "nombre": "baby calabazas",
+        "precio": 10,
+        "img": "productos/producto-calabazas.png", 
+        "descripcion": "Porque llevando estas baby calabazas, todos los días del año pueden ser Halloween si quieres. ¡No lo dudes y hazte con estas calabazitas.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 4,
+      "fields": {
+        "nombre": "cañitas",
+        "precio": 10,
+        "img": "productos/producto-cervezas.png", 
+        "descripcion": "Divertidas jarras de cerveza para ir de tapas con tus amigos por el centro de la ciudad, en casa o de fiesta.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 5,
+      "fields": {
+        "nombre": "flores",
+        "precio": 9,
+        "img": "productos/producto-flores.png", 
+        "descripcion": "Dale un toque más especial y delicado a tu outfit con estas bonitas flores en colores beige y azul con remates en blanco, ¡100% combinable con todo tu armario.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 6,
+      "fields": {
+        "nombre": "globos fiesta",
+        "precio": 10,
+        "img": "productos/producto-globos.png", 
+        "descripcion": "¿Acaso no hay nada más fiestero que unos globitos por pendientes? Luce tu versión más alegre y vivarachera con ellos puestos, serás el alma de la fiesta.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 7,
+      "fields": {
+        "nombre": "porciones pizza",
+        "precio": 10,
+        "img": "productos/producto-pizzas.png", 
+        "descripcion": "Para todos los pizzalovers, ¡estos son vuestros pendientes! Dos porciones de pizza con su masa original, tomates cherries, aceitunas negras, queso,... Irresistibles y adorables.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 8,
+      "fields": {
+        "nombre": "maki vegetal",
+        "precio": 10,
+        "img": "productos/producto-sushi.png", 
+        "descripcion": "Porque el sushi no sólo se disfimg degustándolo... atrévete con estas piezas de maki vegetal que combina mango, aguacate y salmón.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 9,
+      "fields": {
+        "nombre": "doggo Terrier",
+        "precio": 10,
+        "img": "productos/producto-perros.png", 
+        "descripcion": "Tanto si eres team perros como team gatos, este par de Jack Russell Terrier te robarán el corazón.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 10,
+      "fields": {
+        "nombre": "patitos",
+        "precio": 10,
+        "img": "productos/producto-patitos.png", 
+        "descripcion": "Preciosos patitos verdes y azules, si te gustan los pendientes que cuelgan pero prefieres llevarlos pegados al lóbulo, estos son ideales para ti.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 11,
+      "fields": {
+        "nombre": "onigiris",
+        "precio": 10,
+        "img": "productos/producto-onigiris.png", 
+        "descripcion": "El mítico snack coreano, la adorable bolita de arroz rellena con su alga. Con estos onigiris tan combinables podrás usarlos siempre que desees.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 12,
+      "fields": {
+        "nombre": "java enjoyers",
+        "precio": 10,
+        "img": "productos/producto-java.png", 
+        "descripcion": "¿Eres desarrollador?¿Eres un verdadero Java Enjoyer? Entonces presume de tu tecnología favorita a todo el mundo con estos magníficios y originales pendientes inspirados en la famosa taza de Java.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 13,
+      "fields": {
+        "nombre": "flores pascua",
+        "precio": 10,
+        "img": "productos/producto-pascua.png", 
+        "descripcion": "Estas flores de pascua con remate dorado pertenecen a la colección de Navidad de 2022.",
+        "materiales": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 1 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 14,
+      "fields": {
+        "nombre": "bingsu",
+        "precio": 13,
+        "img": "productos/producto-bingsu.png", 
+        "descripcion": "Disfimg de un bonito bingsu coreano, con helado de fresa, toppings de plátano, mango y sirope de caramelo.",
+        "materiales": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 2 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 15,
+      "fields": {
+        "nombre": "calabaza",
+        "precio": 12.5,
+        "img": "productos/producto-calabazaBroche.png", 
+        "descripcion": "Porque llevando esta calabaza con sombrero de bruja, todos los días del año pueden ser Halloween si quieres. ¡No lo dudes y hazte con esta calabazita!",
+        "materiales": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 2
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 16,
+      "fields": {
+        "nombre": "mini maceta",
+        "precio": 12.5,
+        "img": "productos/producto-macetamini.png", 
+        "descripcion": "Con esta mini maceta llena de flores de colores, alegrarás la vista a cualquiera. Saca tu lado más green y añade más color a tu estilo.",
+        "materiales": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 2 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 17,
+      "fields": {
+        "nombre": "fantasma",
+        "precio": 8,
+        "img": "productos/producto-fantasma.png", 
+        "descripcion": "Porque llevando este fantasmita, todos los días del año pueden ser Halloween si quieres. ¡No lo dudes y hazte con él!",
+        "materiales": "Broche realizado con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 2
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 18,
+      "fields": {
+        "nombre": "murcielago",
+        "precio": 10,
+        "img": "productos/producto-murcielago.png", 
+        "descripcion": "¿Crépusculo? ¿Batman? ¿The Vampire Diaries? ¿Halloween? Porque hasta Bram Stoker llevaría este mini murciélago a pasear. ¡No lo dudes y hazte con este pequeño bichito alado!",
+        "materiales": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 2 
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 19,
+      "fields": {
+        "nombre": "maceta flores",
+        "precio": 15,
+        "img": "productos/producto-macetaflores.png", 
+        "descripcion": "Con esta maceta llena de flores de colores, alegrarás la vista a cualquiera. Saca tu lado más green y añade más color a tu estilo.",
+        "materiales": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 2
+      }
+    },
+    {
+      "model": "paperelix.producto",
+      "pk": 20,
+      "fields": {
+        "nombre": "jesus",
+        "precio": 15,
+        "img": "productos/producto-jesus.png", 
+        "descripcion": "Esta versión tan kawaii de Jesús creemos que encenderá el corazón de cualquiera, lleva contigo a esta figurita del Señor y verás como tus días son más bonitos.",
+        "materiales": "Colgante realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Cadena no incluida*.",
+        "medidas": "cm aproximadamente.",
+        "aviso": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor.",
+        "categoria": 3 
+      }
+    }
+  ]
