@@ -30,7 +30,7 @@ def categoria (request, nombre):
     return render(
         request, 'paperelix/categoria.html',
         {
-            "categorias": categoria,
+            "categoria": categoria,
             "productos" : Producto.objects.filter(categoria=categoria)
         }
     )
