@@ -38,7 +38,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xl);
     width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
     padding: var(--space-xl);
     /* border: 1px solid black; */
 }
